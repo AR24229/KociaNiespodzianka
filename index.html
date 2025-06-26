@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kocia Niespodzianka 🐾</title>
+  <link rel="stylesheet" href="style.css" />
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+</head>
+<body>
+
+  <!-- EKRAN 1: Wpisywanie kodu -->
+  <div class="screen" id="screen-code">
+    <h2 class="subtitle">Kocia Wyprawa</h2>
+    <h1>🔍 Znajdź kod na lustrach!</h1>
+    <div id="code-display" class="code-display"></div>
+    <div class="keypad">
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+      <button class="clear">🧼</button>
+      <button class="num">0</button>
+      <button class="submit">✔️</button>
+    </div>
+  </div>
+
+  <!-- EKRAN 2: Ładowanie -->
+  <div class="screen hidden" id="screen-loading">
+    <dotlottie-player
+      src="https://lottie.host/1b33aea6-485c-4525-8514-425dae2b6f66/id9KkiNsII.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay>
+    </dotlottie-player>
+    <p>Mruczę... sprawdzam kod 🐱</p>
+  </div>
+
+  <!-- EKRAN 3: Nagroda -->
+  <div class="screen hidden" id="screen-result">
+    <dotlottie-player
+      src="https://lottie.host/71bec26a-4225-4a7c-8c03-8bdfebeef372/UXMyISNI3X.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay>
+    </dotlottie-player>
+
+    <h2>🎉 Gratulacje, Basiu!</h2>
+    <p>Udało Ci się odkryć kolejny plan naszej wycieczki...</p>
+    <p class="next-step">Udajemy się do:</p>
+    <p class="address">Dąbska 18N/LU12<br>31-572 Kraków</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
